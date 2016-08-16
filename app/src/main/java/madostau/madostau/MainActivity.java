@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonOnClick(){
-        System.out.println("Bla");
+        
     }
 
 }
