@@ -2,6 +2,7 @@ package madostau.madostau;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonOnClick(){
-        
+        System.out.println("Bla");
     }
 
 }
