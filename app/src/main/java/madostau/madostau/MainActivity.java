@@ -13,16 +13,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButtonHandler(getCurrentFocus());
     }
 
-    public void buttonOnClick(View w) {
 
-        Button neuReise = (Button) findViewById(R.id.reiseNeu);
-        Button editReise = (Button) findViewById(R.id.editReise);
-        Button addFreund = (Button) findViewById(R.id.addFreund);
-        Button settings = (Button) findViewById(R.id.settings);
+    public void ButtonHandler(View v){
 
-        neuReise.setOnClickListener(new View.OnClickListener() {
+        Button neuereise = (Button) findViewById(R.id.addTravel);
+        neuereise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CreateNewTravel.class);
@@ -30,26 +28,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        editReise.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-        addFreund.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-        settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
     }
+
 }

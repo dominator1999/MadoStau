@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tools:context="madostau.madostau.CreateNewTravel"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/sky"
+        android:id="@+id/vertical">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ho1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/setNameText"
+                android:layout_gravity="center"
+                android:text="Namen der Reise eingeben:"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/setName"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text=""
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ho2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/setZielText"
+                android:layout_gravity="center"
+                android:text="Ziel der Reise eingeben:"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/setZiel"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text=""
+                />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ho3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/setTerminText"
+                android:layout_gravity="center"
+                android:text="Termin für die Reise:"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/setTermin"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text=""
+                />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ho4">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/addTickets"
+                android:layout_gravity="center"
+                android:text="Tickets hochladen"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:background="@android:drawable/screen_background_dark_transparent"
+                android:onClick="onButtonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ho5">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/setWegpunkte"
+                android:layout_gravity="center"
+                android:text="Wegpunkte angeben"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:background="@android:drawable/screen_background_dark_transparent"
+
+                android:onClick="onButtonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ho6">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/setFreunde"
+                android:layout_gravity="center"
+                android:text="Freunde hinzufügen"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:background="@android:drawable/screen_background_dark_transparent"
+                android:onClick="onButtonClick" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ho7">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/saveTravel"
+                android:layout_gravity="center"
+                android:text="Reise speichern"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_green_light"
+                android:onClick="onButtonClick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
